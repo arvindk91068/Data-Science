@@ -1,0 +1,58 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Library Search Lite — Starter</title>
+  <meta name="description" content="Starter pack for Vibe Coding (Web Track) — Option B: Library Search Lite"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#">Library Search Lite</a>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="navList">Menu</button>
+    <nav>
+      <ul id="navList" class="nav-list">
+        <li><a href="#search">Search</a></li>
+        <li><a href="#books">Books</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1 class="visually-hidden">Library Search Lite</h1>
+
+  <section id="search" class="search-panel" aria-labelledby="search-title">
+    <h2 id="search-title">Search Books</h2>
+    <div class="controls">
+      <label for="q" class="visually-hidden">Search by title, author or tag</label>
+      <input id="q" type="search" placeholder="Search title, author or tag">
+      <button id="clearBtn" class="btn">Clear</button>
+    </div>
+  </section>
+
+  <section id="books" aria-labelledby="books-title">
+    <div class="section-head">
+      <h2 id="books-title">Books</h2>
+      <p id="stats" class="stats" role="status" aria-live="polite"></p>
+    </div>
+    <ul id="bookList" class="card-list" aria-live="polite"></ul>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>Build two interactions: nav toggle + search (and optionally bookmarks via localStorage). See README.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>© Your Team • Vibe Coding (Web Track — Option B)</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
